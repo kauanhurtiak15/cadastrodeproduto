@@ -14,4 +14,6 @@ def salvar_produto(produto):
 
 def listar_produtos():
     try:
-        with open("produtod.txt", "r", encoding="ulf-8")
+        with open("produtod.txt", "r", encoding="ulf-8") as arquivo:
+            for linha in arquivo:
+                nome, preço, categoria = linha.strip
